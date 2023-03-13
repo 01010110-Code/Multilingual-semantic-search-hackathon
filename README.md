@@ -7,16 +7,16 @@ The goal of this project is to build a legal document search system that utilize
 # Technologies Used
 The project will be built using Python, and will utilize the Cohere and Qdrant APIs for natural language processing and search functionality.
 
-#Setup
+# Setup
 To run the project, you will need to have Python installed on your computer, as well as the necessary libraries and dependencies. You will also need to obtain API keys for Cohere and Qdrant.
 
 Once you have all the necessary components, you can clone the repository and run the application from the command line.
 
-#Usage
+# Usage
 To use the legal document search system, simply enter your desired search query and hit enter. The system will retrieve relevant documents and display them in a user-friendly format.
 
-#Contributing
+# Contributing
 Contributions are welcome! If you would like to contribute to the project, please fork the repository and submit a pull request.
 
-#License
+# License
 This project is licensed under the MIT License.
