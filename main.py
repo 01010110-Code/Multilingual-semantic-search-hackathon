@@ -32,3 +32,13 @@ embedding_dict = {"id": 1, "vector": embedding}
 
 # Add the embedding to the index
 qdrant_client.add_documents(index_name=index_name, documents=[embedding_dict])
+
+query_embedding = [0.1, 0.2, ..., 0.5]
+search_result = client.search(
+    index_name=index_name,
+    query={
+        "vector": query_embedding,
+        "top": 10
+    }
+)
+
