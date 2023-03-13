@@ -1,0 +1,56 @@
+AGREEMENT BETWEEN ABC CORPORATION AND XYZ CORPORATION
+
+This Agreement (the "Agreement") is made and entered into on this 1st day of March, 2023 (the "Effective Date") by and between ABC Corporation ("ABC"), a corporation organized and existing under the laws of the State of California, and XYZ Corporation ("XYZ"), a corporation organized and existing under the laws of the State of New York.
+
+RECITALS
+
+WHEREAS, ABC desires to purchase certain goods and services from XYZ; and
+
+WHEREAS, XYZ desires to sell and provide such goods and services to ABC on the terms and conditions set forth herein.
+
+NOW, THEREFORE, in consideration of the mutual promises and covenants contained herein, and other good and valuable consideration, the receipt and sufficiency of which is hereby acknowledged, the parties agree as follows:
+
+1. Definitions. The following terms shall have the meanings set forth below:
+
+(a) "Goods" means the items specified on the Purchase Order.
+
+(b) "Services" means the services specified on the Purchase Order.
+
+(c) "Purchase Order" means the document or documents issued by ABC to XYZ which specify the Goods and Services to be provided and the applicable fees.
+
+(d) "Effective Date" means the date on which this Agreement becomes effective.
+
+2. Purchase of Goods and Services. Subject to the terms and conditions of this Agreement, XYZ agrees to sell and provide to ABC the Goods and Services specified on the Purchase Order.
+
+3. Payment. ABC shall pay XYZ the fees specified on the Purchase Order in accordance with the payment terms set forth therein.
+
+4. Delivery. XYZ shall deliver the Goods and Services to ABC at the times and locations specified on the Purchase Order.
+
+5. Representations and Warranties. XYZ represents and warrants to ABC that:
+
+(a) XYZ has the right to enter into this Agreement and to perform its obligations hereunder.
+
+(b) The Goods and Services will be provided in a professional and workmanlike manner in accordance with generally accepted industry standards.
+
+(c) The Goods and Services will be free from defects in materials and workmanship.
+
+6. Term and Termination. This Agreement shall commence on the Effective Date and shall continue until the completion of the purchase of the Goods and Services, unless earlier terminated in accordance with this Agreement.
+
+7. Governing Law. This Agreement shall be governed by and construed in accordance with the laws of the State of California, without giving effect to its conflict of laws principles.
+
+8. Entire Agreement. This Agreement, together with the Purchase Order, constitutes the entire agreement between the parties and supersedes all prior negotiations, understandings and agreements between the parties, whether written or oral, with respect to the subject matter hereof.
+
+9. Counterparts. This Agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
+ABC CORPORATION
+By: _________________________
+Name: _______________________
+Title: ________________________
+
+XYZ CORPORATION
+By: _________________________
+Name: _______________________
+Title: ________________________
+
