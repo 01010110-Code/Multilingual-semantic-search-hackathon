@@ -42,9 +42,10 @@ query_embedding = cohere_client.embed(texts=[" ".join(query_tokens)]).embeddings
 
 # Search for similar documents
 
+# Search for similar documents
 search_result = qdrant_client.search(
-    index_name=index_name,
-    query_body={
+    collection_name=collection_name,
+    search_request={
         "vector": query_embedding,
         "top": 10
     }
