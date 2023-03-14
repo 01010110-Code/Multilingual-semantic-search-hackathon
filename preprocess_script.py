@@ -18,3 +18,18 @@ def preprocess_documents(directory):
                 doc_dict = {"id": filename, "text": tokens}
                 docs.append(doc_dict)
     return docs
+
+
+def get_document_embeddings(docs):
+    """
+    This function takes a list of preprocessed documents and returns a list of corresponding document embeddings.
+    """
+    embeddings = []
+    for doc in docs:
+        # Convert list of tokens to string
+        text = " ".join(doc)
+        # Get document embedding using Cohere
+        embedding = cohere_client.embed(texts=[text]).embeddings[0]
+        # Append embedding to list
+        embeddings.append(embedding)
+    return embeddings

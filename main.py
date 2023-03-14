@@ -1,5 +1,6 @@
 import cohere
 from qdrant_client import QdrantClient
+from preprocessor import preprocess_documents, get_document_embeddings
 
 # Initialize Cohere client
 cohere_client = cohere.Client(api_key='9HgYT8dxqVVBTC4iNp9OS8shPD5cbKWgWTZNaTOp')
@@ -20,20 +21,25 @@ index_config = {
 }
 index_name = "my_index"
 
-# Create index
-qdrant_client.create_index(index_name=index_name, index_config=index_config)
+# Preprocess documents
+docs = preprocess_documents(directory="path/to/directory")
 
-# Embed the document using Cohere
-document = "This is a sample document"
-embedding = cohere_client.embed(texts=[document]).embeddings[0]  # Cohere returns an embeddings object, so we need to access the embeddings list
+# Get document embeddings
+embeddings = get_document_embeddings(docs)
 
-# Convert the Cohere embedding to the format expected by Qdrant
-embedding_dict = {"id": 1, "vector": embedding}
+# Create index and add documents
+for i, embedding in enumerate(embeddings):
+    document_id = docs[i]["id"]
+    embedding_dict = {"id": document_id, "vector": embedding}
+    qdrant_client.add_documents(index_name=index_name, documents=[embedding_dict])
 
-# Add the embedding to the index
-qdrant_client.add_documents(index_name=index_name, documents=[embedding_dict])
+# Define query
+query_text = "This is a sample query"
+query_doc = nlp(query_text)
+query_tokens = [token.text.lower() for token in query_doc if not token.is_stop and not token.is_punct and not token.like_num]
+query_embedding = cohere_client.embed(texts=[" ".join(query_tokens)]).embeddings[0]
 
-query_embedding = [0.1, 0.2, ..., 0.5]
+# Search for similar documents
 search_result = qdrant_client.search(
     index_name=index_name,
     query={
@@ -42,3 +48,4 @@ search_result = qdrant_client.search(
     }
 )
 
+print(search_result)
