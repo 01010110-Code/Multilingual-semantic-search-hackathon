@@ -6,7 +6,6 @@ from preprocessor import preprocess_documents, get_document_embeddings
 cohere_client = cohere.Client(api_key='9HgYT8dxqVVBTC4iNp9OS8shPD5cbKWgWTZNaTOp')
 
 # Initialize Qdrant client
-# Initialize Qdrant client
 qdrant_client = QdrantClient(api_key="nNWdYRTYLSdw2PMChu2dlRYC67Ja-77_DGh-kyb8aa5BxuwFVXFP9Q")
 
 # Define index configuration
@@ -26,7 +25,7 @@ index_name = "my_index"
 docs = preprocess_documents(directory="/samples")
 
 # Get document embeddings
-embeddings = get_document_embeddings(docs)
+embeddings = get_document_embeddings(docs, cohere_client)
 
 # Create index and add documents
 for i, embedding in enumerate(embeddings):

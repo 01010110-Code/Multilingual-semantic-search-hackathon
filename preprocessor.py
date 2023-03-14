@@ -20,7 +20,7 @@ def preprocess_documents(directory):
     return docs
 
 
-def get_document_embeddings(docs):
+def get_document_embeddings(docs, cohere_client):
     """
     This function takes a list of preprocessed documents and returns a list of corresponding document embeddings.
     """
