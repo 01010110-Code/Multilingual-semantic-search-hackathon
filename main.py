@@ -6,7 +6,8 @@ from preprocessor import preprocess_documents, get_document_embeddings
 cohere_client = cohere.Client(api_key='9HgYT8dxqVVBTC4iNp9OS8shPD5cbKWgWTZNaTOp')
 
 # Initialize Qdrant client
-qdrant_client = QdrantClient(api_key="nNWdYRTYLSdw2PMChu2dlRYC67Ja-77_DGh-kyb8aa5BxuwFVXFP9Q", api_url="https://44e6fb22-9094-444a-9a69-4feaf6eb5b94.us-east-1-0.aws.cloud.qdrant.io")
+# Initialize Qdrant client
+qdrant_client = QdrantClient(api_key="nNWdYRTYLSdw2PMChu2dlRYC67Ja-77_DGh-kyb8aa5BxuwFVXFP9Q")
 
 # Define index configuration
 index_config = {
