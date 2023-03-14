@@ -2,7 +2,6 @@ import cohere
 from qdrant_client import QdrantClient
 from preprocessor import preprocess_documents, get_document_embeddings, nlp
 
-
 # Initialize Cohere client
 cohere_client = cohere.Client(api_key='9HgYT8dxqVVBTC4iNp9OS8shPD5cbKWgWTZNaTOp')
 
@@ -41,16 +40,13 @@ query_tokens = [token.text.lower() for token in query_doc if not token.is_stop a
 query_embedding = cohere_client.embed(texts=[" ".join(query_tokens)]).embeddings[0]
 
 # Search for similar documents
-
-# Search for similar documents
+collection_name = "my_collection"
 search_result = qdrant_client.search(
     collection_name=collection_name,
-    search_request={
-        "vector": query_embedding,
-        "top": 10
-    }
+    vector=query_embedding,
+    top=10
 )
 
-
+print(search_result)
 
 print(search_result)
