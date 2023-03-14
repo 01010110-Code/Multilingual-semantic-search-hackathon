@@ -22,7 +22,7 @@ index_config = {
 index_name = "my_index"
 
 # Preprocess documents
-docs = preprocess_documents(directory="/")
+docs = preprocess_documents(directory="/samples")
 
 # Get document embeddings
 embeddings = get_document_embeddings(docs)
