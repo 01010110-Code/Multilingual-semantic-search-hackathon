@@ -26,10 +26,11 @@ def get_document_embeddings(docs, cohere_client):
     """
     embeddings = []
     for doc in docs:
-        # Convert list of tokens to string
-        text = " ".join(doc)
+        # Get text from doc dictionary
+        text = " ".join(doc["text"])
         # Get document embedding using Cohere
         embedding = cohere_client.embed(texts=[text]).embeddings[0]
         # Append embedding to list
         embeddings.append(embedding)
     return embeddings
+
