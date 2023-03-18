@@ -50,6 +50,6 @@ search_result = qdrant_client.search(
 print(search_result)
 
 
-print(search_result)
 
-print(search_result)
+
+# gotta fix the bug with the cohere_client.search() [top priority]
