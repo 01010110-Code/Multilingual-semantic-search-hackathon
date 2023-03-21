@@ -1,5 +1,5 @@
-# Legal Document Search with Cohere and Qdrant
-This is a project built for the Multilingual Semantic Search Hackathon by LabLab.ai.
+#Legal Document Search with Cohere and Qdrant
+
 
 # Description
 The goal of this project is to build a legal document search system that utilizes the Cohere and Qdrant APIs. The system will allow users to search for legal documents based on specific keywords or phrases, and retrieve relevant documents that can be relied upon in court.
