@@ -1,4 +1,4 @@
-#Legal Document Search with Cohere and Qdrant
+# Legal Document Search with Cohere and Qdrant
 
 
 # Description
